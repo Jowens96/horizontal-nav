@@ -4,33 +4,31 @@ html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 header {
   background-color: #79756f;
   width: 100%;
-  padding: .6em;
+  padding: 0%;
   box-sizing: border-box;
   border: 4px solid #595652;
 }
 
-header {
-  margin-top: 0;
-}
-
 h1 {
   color: #fff;
-  font-family: 'Bevan', sans-serif;
-  text-align: center
+  font-family: Bevan, sans-serif;
+  text-align: center;
 }
-
 
 nav ul {
   display: inline-block;
   list-style-type: none;
   margin: .3em;
-  padding: .5em;
   line-height: 1.5em;
   text-align: center;
+  margin-left: 50px;
 }
 
 nav li {
@@ -40,7 +38,7 @@ nav li {
 nav a {
   display: inline-block;
   font: normal 100%/1.5 sans-serif;
-  padding: .75em;
+  padding: .5em;
   background-color: #713837;
   color: #fff;
   text-decoration: none;
@@ -50,4 +48,9 @@ nav a {
 
 nav a:hover {
   background-color: #f33;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
